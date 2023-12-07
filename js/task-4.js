@@ -1,5 +1,4 @@
-const getTotalBalanceByGender=(users, gender)=users
-
+const getTotalBalanceByGender=(users, gender)=>users.filter(user => user.gender === gender).reduce((sum, user) => sum + user.balance, 0);
 
 
 // Напиши стрілочну функцію getTotalBalanceByGender(users, gender), яка прийматиме два параметра:
